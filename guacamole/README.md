@@ -15,7 +15,7 @@ Vor dem Starten ist es noch notwendig die Datenbank zu initialisieren.
 
 3. Datenbank initialisieren
 
-````docker exec -i guacamole_mysql mysql -uroot -p{MYSQL_PASSWORD} guacamole_db < initdb.sql````
+````docker exec -i guacamole_mysql mysql -u root --password={MYSQL_PASSWORD} guacamole_db < initdb.sql````
 
 4. Datenbank Container stoppen
 
